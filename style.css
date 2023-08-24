@@ -1,0 +1,79 @@
+body{
+    background-color: #1f1f1f;
+}
+.scroll-container {
+    overflow-x: scroll;
+    width: 90%;
+    margin: 0 auto;
+    white-space: nowrap;
+    position: relative;
+    cursor: grab;
+    user-select: none;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display:none;
+  }
+  
+  .autoScroller {
+    display: inline-block;
+  }
+  
+  .t200x400div > a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .t200x400div > a > img {
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .movie-info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .movie-info .movie-title {
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 20px;
+    max-width: 90%; /* Set the maximum width to 200px-10% */
+    text-align: justify; /* Justify the text */
+    display: inline-block;
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) to indicate text truncation */
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal; /* Allow text to wrap to the next line */
+    background-color: #1f1f1f1b;
+  }
+  
+  
+  
+  .movie-info .movie-description {
+    font-size: 12px;
+    white-space: normal; /* Allow line breaks */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) to indicate text truncation */
+    max-width: 200px; /* Adjust this value to control the maximum width */
+    padding: 10px;
+    text-align: justify; /* Justify the text */
+  }
+  
+  
+  
+  .t200x400div > a:hover .movie-info {
+    opacity: 1;
+  }
+  
